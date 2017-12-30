@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Page Two</title>
+        <link rel="stylesheet" href="css.css">
+        <style>
+            .other {
+               width: 960px;
+               color: navy;
+               background-color: pink;
+               border: 2px solid darkblue;
+               padding: 5px;
+            }
+           </style> 
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                    <img src="kot.jpg" width="100"; height="80"; usemap="#kot">
+                    <map name="kot">
+                        <area shape="rect" coords="0,0,50,80" href="index.html" alt="Back"; title="Back">
+                        <area shape="rect" coords="50,0,100,80" href="third.html" alt="Forward"; title="Forward">
+                    </map>
+            </a>
+            <h1 class="other">This is my second page in html!</h1>
+        </header>
+        <h2>Here is a link to first page</h2>
+        <p>
+            <a href="index.html">Page first</a>
+        </p>
+        <h3>And here we have a link for another one page</h3>
+        <p>
+            <a href="third.html">Page third</a>
+        </p>
+        <h1>Let's try a table with contents!</h1>
+        <table>
+            <tr>
+                <td>Row 1 - Col 1</td>
+                <td>Row 1 - Col 2</td>
+            </tr>
+            <tr>
+                <td>Row 2 - Col 1</td>
+                <td>Row 2 - Col 2</td>
+            </tr>
+            <tr>
+                <td colspan="2">Row 3 - Col 1 & Col 2</td>
+            </tr>
+            <tr>
+                <td>Row 4 - Col 1</td>
+                <td>Row 4 - Col 2</td>
+            </tr>
+            <tr>
+                <td>Row 5 - Col 1</td>
+                <td rowspan="2">Row 5 & Row 6 - Col 2</td>
+            </tr>
+            <tr>
+                <td>Row 6 - Col 1</td>
+            </tr>
+            <tr>
+                <td>Row 7 - Col 1</td>
+                <td>Row 7 - Col 2</td>
+                <td>Row 7 - Col 3</td>
+                <td rowspan="4">Row 7, 8, 9 & 10 - Col 4</td>
+            </tr>
+            <tr>
+                <td>Row 8 - Col 1</td>
+                <td colspan="2" rowspan="3">Row 8, 9 & 10 - Col 2 & 3</td>
+            </tr>
+            <tr>
+                <td>Row 9 - Col 1</td>
+            </tr>
+            <tr>
+                <td>Row 10 - Col 1</td>
+            </tr>
+            <tr>
+                <td colspan="2">Row 11 - Col 1 & 2</td>
+                <td colspan="2">Row 11 - Col 3 & 4</td>
+            </tr>
+            <tr>
+                <td colspan="4">Row 12 - Col 1, 2, 3 & 4</td>
+            </tr>
+        </table>
+    </body>
+</html>        

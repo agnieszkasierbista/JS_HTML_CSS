@@ -1,0 +1,53 @@
+.inner-div {
+    background-color: gold;
+    border: 2px solid orange;
+}
+.outer-div {
+    background-color: rgb(20, 28, 143);
+    border: 1px solid black;
+}
+table tr td {
+    border: 2px solid coral;
+    background-color: lightcoral;
+    text-align: left;
+}
+html {
+    color: white;
+    background-color: #E63B47;
+}
+body {
+    border: 3px dotted #37230C;
+    padding: 30px;
+}
+article {
+    background-color: #F5622C;
+    cursor: auto;
+}
+nav {
+    background-color: #F49222;
+}
+footer {
+    background-color: #37230C;
+}
+ul {
+    list-style: circle outside none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    caption-side: top;
+    border: 2px solid peachpuff;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited {
+    color: #E63B47
+}
+a:hover {
+    color: #37230C;
+    cursor: pointer;
+}
+a:active {
+    color: rgb(20, 28, 143)
+}
