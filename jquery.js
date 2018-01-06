@@ -7,9 +7,16 @@ $(document).ready(function(){
     $("#pussy-cat").click(function(){
         $(this).animate({left: "250px"}, "slow");
     });
+    $("#importantation").click(function(){
+        $("#importantText").addClass("important bluish");
+    });
 
-
-
+    $("#letMeKnow").click(function(){
+        var txt = "";
+        txt += "Width: " + $("#sizedDiv").width() + "</br>";
+        txt += "Height: " + $("#sizedDiv").height();
+        $("#sizedDiv").html(txt);
+    }); 
 
 
 

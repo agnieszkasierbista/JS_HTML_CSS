@@ -57,3 +57,18 @@ a:active {
 #pussy-cat {
     position: relative;
 }
+.important {
+    font-size: xx-large;
+    font-style: bold;
+    border: dotted red;
+    background-color: yellow; 
+}
+.bluish{
+    color: rgb(76, 161, 201);
+}
+#sizedDiv {
+    width: 200px;
+    height: 150px;
+    border: dashed rgb(114, 6, 6);
+    background-color: rgb(168, 5, 35);
+}
