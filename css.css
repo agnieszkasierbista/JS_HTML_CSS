@@ -72,3 +72,9 @@ a:active {
     border: dashed rgb(114, 6, 6);
     background-color: rgb(168, 5, 35);
 }
+#myInput {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #E63B47;
+    background-color: lightcoral;
+}

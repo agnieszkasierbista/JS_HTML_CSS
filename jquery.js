@@ -29,6 +29,11 @@ jq(document).ready(function(){
         }));
     });
 
-
+    jq("#myInput").on("keyup", function() {
+        var value = jq(this).val().toLowerCase();
+        jq("#myTable tr").filter(function() {
+          jq(this).toggle(jq(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
 
 });
