@@ -17,7 +17,10 @@ $(document).ready(function(){
         txt += "Height: " + $("#sizedDiv").height();
         $("#sizedDiv").html(txt);
     }); 
-
+    
+    $("#loading").click(function(){
+        $("#toLoad").load("demo_test.txt");
+    });
 
 
 
