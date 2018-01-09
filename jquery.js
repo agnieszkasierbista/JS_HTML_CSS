@@ -1,25 +1,32 @@
-$(document).ready(function(){
+var jq = $.noConflict();
+jq(document).ready(function(){
 
-    $("#domMod").click(function(){
-        alert("You got a " + $("#used").text());
+    jq("#domMod").click(function(){
+        alert("You got a " + jq("#used").text());
     });
     
-    $("#pussy-cat").click(function(){
-        $(this).animate({left: "250px"}, "slow");
+    jq("#pussy-cat").click(function(){
+        jq(this).animate({left: "250px"}, "slow");
     });
-    $("#importantation").click(function(){
-        $("#importantText").addClass("important bluish");
+    jq("#importantation").click(function(){
+        jq("#importantText").addClass("important bluish");
     });
 
-    $("#letMeKnow").click(function(){
+    jq("#letMeKnow").click(function(){
         var txt = "";
-        txt += "Width: " + $("#sizedDiv").width() + "</br>";
-        txt += "Height: " + $("#sizedDiv").height();
-        $("#sizedDiv").html(txt);
+        txt += "Width: " + jq("#sizedDiv").width() + "</br>";
+        txt += "Height: " + jq("#sizedDiv").height();
+        jq("#sizedDiv").html(txt);
     }); 
     
-    $("#loading").click(function(){
-        $("#toLoad").load("demo_test.txt");
+    jq("#loading").click(function(){
+        jq("#toLoad").load("demo_test.txt", (function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "success")
+                alert("External content loaded successfully!");
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+
+        }));
     });
 
 
